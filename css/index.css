@@ -1,0 +1,61 @@
+/* Animations */
+@keyframes moveInFromLeft { 
+    from{ 
+        transform: translateX(-1200px); 
+        opacity: 0;
+    } 
+    to{ 
+        transform: translateX(0); 
+        opacity: 1;
+    }
+}
+
+.moveInFromLeft{
+    animation-name: moveInFromLeft;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+/* Transitions and other stuff */
+
+/*Logo*/
+.custom-logo{
+    border-radius: 50%;
+    border: 5px solid green;
+    border-style: dashed;
+    padding: 7px;
+    display: inline-block;
+}
+/*Logo*/
+
+/*Items Main*/
+.text-color{
+    color: lightblue;
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(166, 255, 0, 0.5)),#e9c527;
+    border-radius: 50%;
+    border: 7px solid green;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle:hover{
+    scale: 1.2;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 30px;
+}
+/*Items Main*/
